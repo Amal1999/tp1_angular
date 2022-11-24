@@ -1,0 +1,15 @@
+
+
+
+<div class="container">
+  <div [style.color]="color"
+  style="padding-bottom: 20px;padding-top: 20px;">
+  EXERCICE 1
+  </div>
+  <div style="padding-bottom: 10px; width: 200px;">
+    <input type="text" class="form-control" #in1 (change)="onChangeColor(in1.value)"  name="color" id="color"/>
+  </div>
+  <button (click)="onReset()"  class="btn btn-primary">
+    Reset
+  </button>
+</div>

@@ -1,0 +1,10 @@
+<div class="row d-flex justify-content-center">
+  <div class="col-5">
+    <app-list-component [listCvs]="listCv" (sendCv)="onCvRecieve($event)"></app-list-component>
+  </div>
+  <div class="col-6">
+
+      <app-cv-details *ngIf="selectedCv" [cv]="selectedCv"></app-cv-details>
+
+  </div>
+</div>
